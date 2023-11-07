@@ -3,12 +3,12 @@ version: '3.7'
 volumes:
     prometheus_data: {}
     grafana_data: {}
-    alloy-test_default:
-      external: true
 
 networks:
   monitor-net:
-
+  alloy-test_default:
+    external: true
+    
 services:
 
   prometheus:
